@@ -16,7 +16,8 @@ while (i <= n):
     else:
         if (d.get(i) == None):
             d[i] = 1
-        else:d[i] = d.get(i) + 1
+        else:
+            d[i] = d.get(i) + 1
         n /= i
 
 for key, value in d.items():
