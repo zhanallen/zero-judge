@@ -6,7 +6,7 @@ Created on Fri Sep 15 01:34:38 2023
 """
 
 a, b, c = map(int, input().split())
-x1 = (-b + ((b ** 2) - 4 * a * c) ** (1 / 2)) / (2 * a)
+x1 = (-b + ((b ** 2) - 4 * a * c) ** (1 / 2)) / (2 * a)     # 計算可能的正負兩個根
 x2 = (-b - ((b ** 2) - 4 * a * c) ** (1 / 2)) / (2 * a)
 if (type(x1) == complex or type(x2) == complex):
     print("No real root")
