@@ -9,6 +9,6 @@ Created on Wed Sep 27 22:30:51 2023
 while (1):
     try:
         x = int(input())
-        print(int(2 * (((x * (x - 1)) / 2) + 1)))    #算出公式直接套用
+        print(int(2 * (((x * (x - 1)) / 2) + 1)))    # 算出公式直接套用
     except:
         break
