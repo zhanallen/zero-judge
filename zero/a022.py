@@ -3,6 +3,7 @@
 Created on Wed Sep 27 21:31:23 2023
 
 @author: allen
+
 """
 
 import math
