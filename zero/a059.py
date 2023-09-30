@@ -9,7 +9,7 @@ import math
 
 def sc(a, b):
     r = 0
-    for i in range(math.ceil(a ** 0.5),(int(b ** 0.5) + 1)):
+    for i in range(math.ceil(a ** 0.5), (int(b ** 0.5) + 1)):
         r += i ** 2
     return (r)
 
