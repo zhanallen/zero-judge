@@ -6,4 +6,5 @@ Created on Sun Oct  1 23:07:00 2023
 """
 
 x = input()
-print("0" * (16 - len(x)) + x)
+s = 16 - len(x)    # 16減x長度
+print("0" * (s) + x)    # 輸出s個0再輸出x
