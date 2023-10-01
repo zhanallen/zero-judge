@@ -14,9 +14,6 @@ for i in range(len(x)):
 
 
 
-
-
-
 """
 或是用內建涵式
 
