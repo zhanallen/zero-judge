@@ -3,6 +3,10 @@
 Created on Mon Oct  2 00:04:48 2023
 
 @author: allen
+
+請查詢附錄X的表格，將以下句子全部輸出成小寫，
+"PLEASE CONVERT THIS SENTENCE TO LOWER CASE."
+
 """
 
 x = input()
