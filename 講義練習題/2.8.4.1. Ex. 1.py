@@ -11,4 +11,16 @@ for i in range(len(x)):
         print(chr(ord(x[i]) + 32), end = "")
     else:
         print(x[i], end = "")
-        
+
+
+
+
+
+
+"""
+或是用內建涵式
+
+x = input()
+print(x.lower())
+
+"""
