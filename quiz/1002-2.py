@@ -27,4 +27,4 @@ certain thin
 
 x = input()
 y = input()
-print(x[2:],y[:-2])
+print(x[2:], y[:-2])
