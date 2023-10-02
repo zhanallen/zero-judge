@@ -24,4 +24,4 @@ certain
 """
 
 x = input()
-print(x[2:])
+print(x[2:])    # 印出第二個之後的字串
