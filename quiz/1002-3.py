@@ -27,5 +27,6 @@ x, y = map(int, input().split())
 print(x, "/", y, "餘", x % y, sep = "")
 print(y, "/", x, "餘", y % x, sep = "")
 
+# 上面是之前教過的解法，下面是這堂課教的解法
 # print(f"{x}/{y}餘{x % y}")
 # print(f"{y}/{x}餘{y % x}")
