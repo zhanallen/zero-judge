@@ -24,5 +24,8 @@ Created on Mon Oct  2 11:24:15 2023
 """
 
 x, y = map(int, input().split())
-print(f"{x}/{y}餘{x % y}")
-print(f"{y}/{x}餘{y % x}")
+print(x, "/", y, "餘", x % y, sep = "")
+print(y, "/", x, "餘", y % x, sep = "")
+
+# print(f"{x}/{y}餘{x % y}")
+# print(f"{y}/{x}餘{y % x}")
