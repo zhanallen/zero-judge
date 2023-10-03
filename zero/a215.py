@@ -12,7 +12,6 @@ while (1):
         s = 0
         while (1):
             Sum += x
-            print(x,Sum)
             s += 1
             x += 1
             if(Sum > y):
