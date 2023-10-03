@@ -14,7 +14,7 @@ while (1):
             Sum += x
             s += 1
             x += 1
-            if(Sum > y):
+            if (Sum > y):
                 break
         print(s)
     except:
