@@ -8,6 +8,6 @@ Created on Thu Oct  5 00:20:09 2023
 x = int(input())
 n = input().split()
 for i in range(0, x, 1):
-    m = n[i]
-    n[i] = int(m[::-1])
+    c = n[i]
+    n[i] = int(c[::-1])
 print(max(n))
