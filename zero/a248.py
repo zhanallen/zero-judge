@@ -14,3 +14,4 @@ while (1):
         print(s[:-1])
     except:
         break
+    
