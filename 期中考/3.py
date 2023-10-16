@@ -29,26 +29,26 @@ The %【跳5行】
 """
 
 x = input()
-if ("@" in x):
+if ("@" in x):    # 判斷@是否在x裡面
     l = x.split("@")
     print(l[0] + "@" + "【跳1行】")
     print("1" + l[1])
-elif("$" in x):
+elif("$" in x):    # 判斷$是否在x裡面
     l = x.split("$")
     print(l[0] + "$" + "【跳2行】")
     print("1\n2", end = "")
     print(l[1])
-elif("#" in x):
+elif("#" in x):    # 判斷#是否在x裡面
     l = x.split("#")
     print(l[0] + "#" + "【跳3行】")
     print("1\n2\n3", end = "")
     print(l[1])
-elif("!" in x):
+elif("!" in x):    # 判斷!是否在x裡面
     l = x.split("!")
     print(l[0] + "!" + "【跳4行】")
     print("1\n2\n3\n4", end = "")
     print(l[1])
-elif("%" in x):
+elif("%" in x):    # 判斷%是否在x裡面
     l = x.split("%")
     print(l[0] + "%" + "【跳5行】")
     print("1\n2\n3\n4\n5", end = "")
