@@ -11,7 +11,7 @@ n = list()
 for i in range(x):
    a = list(map(str, input().split()))
    c.append(a[0])
-   if ((a[0] in n) != True):
+   if (a[0] not in n):
        n.append(a[0])
 n.sort()
 for i in n:
