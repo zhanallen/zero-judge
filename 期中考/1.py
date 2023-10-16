@@ -30,9 +30,9 @@ Created on Mon Oct 16 15:50:38 2023
 
 """
 
-x = list(map(int, input().split()))
+x = list(map(str, input().split()))
 y = list(map(str, input().split()))
-n = str(x[0])
+n = x[0]
 for i in range(len(x) - 1):
-    n = n + y[i % len(y)] + f"{x[i + 1]}"
-print(eval(n))
+    n = n + y[i % len(y)] + f"{x[i + 1]}"    # 把x, y兩個串列拼成一個字串(也就是題目要的算式)
+print(eval(n))    # 直接使用eval()把算式結果求出
