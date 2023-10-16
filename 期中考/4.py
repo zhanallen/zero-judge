@@ -34,10 +34,12 @@ while (1):
         x = int(input())
         if (x > 0):
             for i in range(1, x + 1):
-                print(f"{i} " * i)
+                print(f"{i} " * (i - 1), end = "")
+                print(i)
         if (x < 0):
             for i in range(abs(x), 0, -1):
-                print(f"{i} " * i)
+                print(f"{i} " * (i - 1), end = "")
+                print(i)
     except:
         break
     
