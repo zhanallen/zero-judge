@@ -24,5 +24,5 @@ What_a_nice_day._Let's_go_hiking.
 
 """
 
-x = input().split()
-print("_".join(x))
+x = input().split()    # 先把輸入的東西用split切成串列
+print("_".join(x))    # 用join整理串列再輸出
