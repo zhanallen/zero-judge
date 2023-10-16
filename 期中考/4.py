@@ -40,6 +40,7 @@ while (1):
         if (x < 0):
             for i in range(abs(x), 0, -1):
                 print(f"{i} " * (i - 1), end = "")
+                     # 注意^是有一個空白的
                 print(i)
     except:
         break
