@@ -23,6 +23,5 @@ This_is_a_book.
 What_a_nice_day._Let's_go_hiking.
 """
 
-x = input()
-a = x.split()
-print("_".join(a))
+x = input().split()
+print("_".join(x))
