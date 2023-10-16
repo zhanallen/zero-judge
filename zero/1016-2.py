@@ -22,6 +22,7 @@ Created on Mon Oct 16 08:55:09 2023
 123.45
 範例輸出 #2
 [123.4500]
+
 """
 
 x = float(input())

@@ -21,6 +21,7 @@ This_is_a_book.
    What a   nice   day.    Let's    go hiking.
 範例輸出 #2
 What_a_nice_day._Let's_go_hiking.
+
 """
 
 x = input().split()
