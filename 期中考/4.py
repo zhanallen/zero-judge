@@ -34,12 +34,12 @@ while (1):
         x = int(input())
         if (x > 0):
             for i in range(1, x + 1):
-                print(f"{i} " * (i - 1), end = "")
+                print(f"{i} " * (i - 1), end = "")    # 為了不讓每一行輸出最後多一個空白這邊會少輸出一個
                      # 注意^是有一個空白的
                 print(i)
         if (x < 0):
             for i in range(abs(x), 0, -1):
-                print(f"{i} " * (i - 1), end = "")
+                print(f"{i} " * (i - 1), end = "")    # 為了不讓每一行輸出最後多一個空白這邊會少輸出一個
                      # 注意^是有一個空白的
                 print(i)
     except:
