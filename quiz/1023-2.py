@@ -24,5 +24,6 @@ Created on Mon Oct 23 08:54:47 2023
 [ 13.4000]
 
 """
+
 x = float(input())
 print("[%8.4f]" %x)
