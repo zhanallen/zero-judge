@@ -30,12 +30,11 @@ if((x % 2) == 1):
 else:
     print("Even")
     
+    
 """
-
 x = int(input())
 if(x % 2):
     print("Odd")
 else:
     print("Even")
-    
 """
