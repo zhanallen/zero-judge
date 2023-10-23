@@ -25,7 +25,17 @@ Even
 """
 
 x = int(input())
+if((x % 2) == 1):
+    print("Odd")
+else:
+    print("Even")
+    
+"""
+
+x = int(input())
 if(x % 2):
     print("Odd")
 else:
     print("Even")
+    
+"""
