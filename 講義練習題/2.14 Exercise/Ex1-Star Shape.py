@@ -109,7 +109,7 @@ while (i < 2*x):
     i += 1
 print()
 
-i = 1    # 四種矩形缺口
+i = 1    # 四種矩形尖角
 while (i < 2*x):
     if (i < x):    # 1號
         print(" " * (x-i), "*" * ((2*i)-1), " " * (x-i), sep = "", end = "")
