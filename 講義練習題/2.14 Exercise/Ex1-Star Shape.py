@@ -4,7 +4,6 @@ Created on Mon Oct 23 15:52:01 2023
 
 @author: allen
 
-# print(" " * 2,sep = "", end = "")
 """
 
 import math
