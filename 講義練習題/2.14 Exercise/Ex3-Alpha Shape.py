@@ -20,42 +20,91 @@ lx = list(str(i) for i in range(1,x+1))
 ln = list(str(i) for i in range(1,x+1,2))
 
 i = 1    # 橫向輸出
-while (i <= x):
+while (i <= x):    # 1號
     print(f"{low(i)}", end = "")
     i += 1
 print("  ", end = "")
 i = x
-while (i > 0):
+while (i > 0):  # 2號
     print(f"{low(i)}", end = "")
     i -= 1
+print("  ", end = "")
 i = 1
-while (i <= x):
-    print(f"{low(i)}", end = "")
+while (i <= x):    # 3號
+    if (i % 2):
+        print(f"{low(i)}", end = "")
+    else:
+        print(f"{up(i)}", end = "")
     i += 1
 print("  ", end = "")
 i = x
-while (i > 0):
-    print(f"{low(i)}", end = "")
+while (i > 0):    # 4號
+    if (i % 2):
+        print(f"{low(i)}", end = "")
+    else:
+        print(f"{up(i)}", end = "")
     i -= 1
 print("\n")
 
     
 i = 1    # 直向輸出
 while (i <= x):
-    print(f"{i}  {x-i+1}")
+    print(f"{low(i)}  {low(x-i+1)}", end = "")
+    if (i % 2):
+        print(f"  {low(i)}  {low(x-i+1)}")
+    else:
+        print(f"  {up(i)}  {up(x-i+1)}")
     i += 1
 print()
 
 i = 1    # 八種直角三角形
 while (i <= x):
-    print(f"{i}" * i, " " * (x-i), sep = "", end = "")
-    print("  ", f"{x-i+1}" * i, " " * (x-i), sep = "", end = "")
-    print("  ", " " * (x-i), f"{i}" * i, sep = "", end = "")
-    print("  ", " " * (x-i), f"{x-i+1}" * i, sep = "", end = "")
-    print("  ", f"{i}" * (x-i+1), " " * (i-1), sep = "", end = "")
-    print("  ", f"{x-i+1}" * (x-i+1), " " * (i-1), sep = "", end = "")
-    print("  ", " " * (i-1), f"{i}" * (x-i+1), sep = "", end = "")
-    print("  ", " " * (i-1), f"{x-i+1}" * (x-i+1), sep = "", end = "")
+    print(f"{low(i)}" * i, " " * (x-i), sep = "", end = "")    # 1號
+    print("  ", f"{low(x-i+1)}" * i, " " * (x-i), sep = "", end = "")    # 2號
+    print("  ", " " * (x-i), f"{low(i)}" * i, sep = "", end = "")    # 3號
+    print("  ", " " * (x-i), f"{low(x-i+1)}" * i, sep = "", end = "")    # 4號
+    print("  ", f"{low(i)}" * (x-i+1), " " * (i-1), sep = "", end = "")
+    print("  ", f"{low(x-i+1)}" * (x-i+1), " " * (i-1), sep = "", end = "")
+    print("  ", " " * (i-1), f"{low(i)}" * (x-i+1), sep = "", end = "")
+    print("  ", " " * (i-1), f"{low(x-i+1)}" * (x-i+1), sep = "", end = "")
+    print()
+    i += 1
+print()
+
+i = 1    # 八種直角三角形
+while (i <= x):
+    if (i % 2):
+        print(f"{low(i)}" * i, " " * (x-i), sep = "", end = "")    # 1號
+    else:
+        print(f"{up(i)}" * i, " " * (x-i), sep = "", end = "")    # 1號
+    if (i % 2):
+        print("  ", f"{low(x-i+1)}" * i, " " * (x-i), sep = "", end = "")    # 2號
+    else:
+        print("  ", f"{up(x-i+1)}" * i, " " * (x-i), sep = "", end = "")    # 2號
+    if (i % 2):
+        print("  ", " " * (x-i), f"{low(i)}" * i, sep = "", end = "")    # 3號
+    else:
+        print("  ", " " * (x-i), f"{up(i)}" * i, sep = "", end = "")    # 3號
+    if (i % 2):
+        print("  ", " " * (x-i), f"{low(x-i+1)}" * i, sep = "", end = "")    # 4號
+    else:
+        print("  ", " " * (x-i), f"{up(x-i+1)}" * i, sep = "", end = "")    # 4號
+    if (i % 2):
+        print("  ", f"{low(i)}" * (x-i+1), " " * (i-1), sep = "", end = "")
+    else:
+        print("  ", f"{up(i)}" * (x-i+1), " " * (i-1), sep = "", end = "")
+    if (i % 2):
+        print("  ", f"{low(x-i+1)}" * (x-i+1), " " * (i-1), sep = "", end = "")
+    else:
+        print("  ", f"{up(x-i+1)}" * (x-i+1), " " * (i-1), sep = "", end = "")
+    if (i % 2):
+        print("  ", " " * (i-1), f"{low(i)}" * (x-i+1), sep = "", end = "")
+    else:
+        print("  ", " " * (i-1), f"{up(i)}" * (x-i+1), sep = "", end = "")
+    if (i % 2):
+        print("  ", " " * (i-1), f"{low(x-i+1)}" * (x-i+1), sep = "", end = "")
+    else:
+        print("  ", " " * (i-1), f"{up(x-i+1)}" * (x-i+1), sep = "", end = "")        
     print()
     i += 1
 print()
@@ -63,10 +112,10 @@ print()
 i = 1    # 八種等腰三角形 (底為x)
 while (i <= (x+(x%2)-1)):
     if (((i*2)-1) <= x):    # 上半部
-        print(" " * (n-i), f"{2*i-1}" * ((i*2)-1), " " * (n-i), sep = "", end = "")    # 1號
-        print(" " * 2, " " * (n-i), f"{2*(n-i)+1}" * ((i*2)-1), " " * (n-i), sep = "", end = "")    # 1號
-        print(" " * 2, " " * (i-1), f"{(2*n-1)-(2*(i-1))}" * (((n-i)*2)+1), " " * (i-1), sep = "", end = "")    # 2號
-        print(" " * 2, " " * (i-1), f"{2*i-1}" * (((n-i)*2)+1), " " * (i-1), sep = "", end = "")    # 2號
+        print(" " * (n-i), f"{low(2*i-1)}" * ((i*2)-1), " " * (n-i), sep = "", end = "")    # 1號
+        print(" " * 2, " " * (n-i), f"{low(2*(n-i)+1)}" * ((i*2)-1), " " * (n-i), sep = "", end = "")    # 1號
+        print(" " * 2, " " * (i-1), f"{low((2*n-1)-(2*(i-1)))}" * (((n-i)*2)+1), " " * (i-1), sep = "", end = "")    # 2號
+        print(" " * 2, " " * (i-1), f"{low(2*i-1)}" * (((n-i)*2)+1), " " * (i-1), sep = "", end = "")    # 2號
         print(" " * 2, *ln[-1:(-i-1):-1], " " * (n-i), sep = "", end = "")    # 5號
         print(" " * 2, *ln[:i], " " * (n-i), sep = "", end = "")    # 6號
         print(" " * 2, " " * (n-i), *ln[(n-i):n], sep = "", end = "")    # 7號
