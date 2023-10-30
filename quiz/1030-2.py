@@ -34,7 +34,7 @@ Created on Mon Oct 30 08:53:57 2023
 """
 
 x, y = map(float, input().split())
-x = int(x)
+x = int(x)    # 判斷項為int比較不會出錯
 if(x == 1):
     print("[%6.4f]" %y)
 if(x == 2):
