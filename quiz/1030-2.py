@@ -35,9 +35,9 @@ Created on Mon Oct 30 08:53:57 2023
 
 x, y = map(float, input().split())
 x = int(x)    # 判斷項為int比較不會出錯
-if(x == 1):
+if (x == 1):
     print("[%6.4f]" %y)
-if(x == 2):
+if (x == 2):
     print("[%6.2f]" %y)
-if(x == 3):
+if (x == 3):
     print("[%-6.2f]" %y)    # 加入負號可以讓空格跑到後面
