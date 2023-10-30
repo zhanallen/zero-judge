@@ -59,28 +59,28 @@ ln = list(str(i) for i in range(1,x+1,2))    # 建立長度為n的數字陣列
 
 i = 1    # 橫向輸出
 while (i <= x):    # 1號
-    print(f"{low(i)}", end = "")
+    printl(f"{low(i)}")
     i += 1
 print("  ", end = "")
 i = x
 while (i > 0):  # 2號
-    print(f"{low(i)}", end = "")
+    printl(f"{low(i)}")
     i -= 1
 print("  ", end = "")
 i = 1
 while (i <= x):    # 3號
     if (i % 2):    # 奇數位
-        print(f"{low(i)}", end = "")
+        printl(f"{low(i)}")
     else:    # 偶數位
-        print(f"{up(i)}", end = "")
+        printl(f"{up(i)}")
     i += 1
 print("  ", end = "")
 i = x
 while (i > 0):    # 4號
     if (i % 2):    # 奇數位
-        print(f"{low(i)}", end = "")
+        printl(f"{low(i)}")
     else:    # 偶數位
-        print(f"{up(i)}", end = "")
+        printl(f"{up(i)}")
     i -= 1
 print("\n")
 
@@ -114,23 +114,23 @@ print()
 i = 1    # 八種直角三角形(有大小寫)
 while (i <= x):
     if (i % 2):    # 奇數行
-        print(f"{low(i)}" * i, " " * (x-i), sep = "", end = "")    # 1號
-        print("  ", f"{low(x-i+1)}" * i, " " * (x-i), sep = "", end = "")    # 2號
-        print("  ", " " * (x-i), f"{low(i)}" * i, sep = "", end = "")    # 3號
-        print("  ", " " * (x-i), f"{low(x-i+1)}" * i, sep = "", end = "")    # 4號
-        print("  ", f"{low(i)}" * (x-i+1), " " * (i-1), sep = "", end = "")    # 5號
-        print("  ", f"{low(x-i+1)}" * (x-i+1), " " * (i-1), sep = "", end = "")    # 6號
-        print("  ", " " * (i-1), f"{low(i)}" * (x-i+1), sep = "", end = "")    # 7號
-        print("  ", " " * (i-1), f"{low(x-i+1)}" * (x-i+1), sep = "", end = "")    # 8號
+        printl(f"{low(i)}" * i + " " * (x-i))    # 1號
+        printl("  " + f"{low(x-i+1)}" * i + " " * (x-i))    # 2號
+        printl("  " + " " * (x-i) + f"{low(i)}" * i)    # 3號
+        printl("  " + " " * (x-i) + f"{low(x-i+1)}" * i)    # 4號
+        printl("  " + f"{low(i)}" * (x-i+1) + " " * (i-1))    # 5號
+        printl("  " + f"{low(x-i+1)}" * (x-i+1) + " " * (i-1))    # 6號
+        printl("  " + " " * (i-1) + f"{low(i)}" * (x-i+1))    # 7號
+        printl("  " + " " * (i-1) + f"{low(x-i+1)}" * (x-i+1))    # 8號
     else:    # 偶數行
-        print(f"{up(i)}" * i, " " * (x-i), sep = "", end = "")
-        print("  ", f"{up(x-i+1)}" * i, " " * (x-i), sep = "", end = "")
-        print("  ", " " * (x-i), f"{up(i)}" * i, sep = "", end = "")
-        print("  ", " " * (x-i), f"{up(x-i+1)}" * i, sep = "", end = "")
-        print("  ", f"{up(i)}" * (x-i+1), " " * (i-1), sep = "", end = "")
-        print("  ", f"{up(x-i+1)}" * (x-i+1), " " * (i-1), sep = "", end = "")
-        print("  ", " " * (i-1), f"{up(i)}" * (x-i+1), sep = "", end = "")
-        print("  ", " " * (i-1), f"{up(x-i+1)}" * (x-i+1), sep = "", end = "")        
+        printl(f"{up(i)}" * i + " " * (x-i))
+        printl("  " + f"{up(x-i+1)}" * i + " " * (x-i))
+        printl("  " + " " * (x-i) + f"{up(i)}" * i)
+        printl("  " + " " * (x-i) + f"{up(x-i+1)}" * i)
+        printl("  " + f"{up(i)}" * (x-i+1) + " " * (i-1))
+        printl("  " + f"{up(x-i+1)}" * (x-i+1) + " " * (i-1))
+        printl("  " + " " * (i-1) + f"{up(i)}" * (x-i+1))
+        printl("  " + " " * (i-1) + f"{up(x-i+1)}" * (x-i+1))        
     print()
     i += 1
 print()
@@ -139,19 +139,19 @@ print()
 i = 1    # 八種等腰三角形 (底為x)
 while (i <= (x+(x%2)-1)):
     if (((i*2)-1) <= x):    # 上半部
-        print(" " * (n-i), f"{low(2*i-1)}" * ((i*2)-1), " " * (n-i), sep = "", end = "")    # 1號
-        print(" " * 2, " " * (n-i), f"{low(2*(n-i)+1)}" * ((i*2)-1), " " * (n-i), sep = "", end = "")    # 2號
-        print(" " * 2, " " * (i-1), f"{low((2*n-1)-(2*(i-1)))}" * (((n-i)*2)+1), " " * (i-1), sep = "", end = "")    # 3號
-        print(" " * 2, " " * (i-1), f"{low(2*i-1)}" * (((n-i)*2)+1), " " * (i-1), sep = "", end = "")    # 4號
+        printl(" " * (n-i) + f"{low(2*i-1)}" * ((i*2)-1) + " " * (n-i))    # 1號
+        printl(" " * 2 + " " * (n-i) + f"{low(2*(n-i)+1)}" * ((i*2)-1) + " " * (n-i))    # 2號
+        printl(" " * 2 + " " * (i-1) + f"{low((2*n-1)-(2*(i-1)))}" * (((n-i)*2)+1) + " " * (i-1))    # 3號
+        printl(" " * 2 + " " * (i-1) + f"{low(2*i-1)}" * (((n-i)*2)+1) + " " * (i-1))    # 4號
         print(" " * 2, *lowlist(ln[:i]), " " * (n-i), sep = "", end = "")    # 5號
         print(" " * 2, *lowlist(ln[-1:(-i-1):-1]), " " * (n-i), sep = "", end = "")    # 6號
         print(" " * 2, " " * (n-i), *lowlist(ln[(n-i):n]), sep = "", end = "")    # 7號
         print(" " * 2, " " * (n-i), *lowlist(ln[i-1::-1]), sep = "", end = "")    # 8號
     else:    # 下半部
-        print(" " * (n*2-1), end = "")    # 1號
-        print(" " * (n*2+1), end = "")    # 2號
-        print(" " * (n*2+1), end = "")    # 3號
-        print(" " * (n*2+1), end = "")    # 4號
+        printl(" " * ((n*2) - 1))    # 1號
+        printl(" " * ((n*2) + 1))    # 2號
+        printl(" " * ((n*2) + 1))    # 3號
+        printl(" " * ((n*2) + 1))    # 4號
         print(" " * 2, *lowlist(ln[:(2*n-i)]), " " * (i-n), sep = "", end = "")    # 5號
         print(" " * 2, *lowlist(ln[-1:(i-n-1):-1]), " " * (i-n), sep = "", end = "")    # 6號
         print(" " * 2, " " * (i-n), *lowlist(ln[i-n:n]), sep = "", end = "")    # 7號
