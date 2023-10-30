@@ -34,9 +34,10 @@ Created on Mon Oct 30 08:53:57 2023
 """
 
 x, y = map(float, input().split())
-if(int(x) == 1):
+x = int(x)
+if(x == 1):
     print("[%6.4f]" %y)
-if(int(x) == 2):
+if(x == 2):
     print("[%6.2f]" %y)
-if(int(x) == 3):
+if(x == 3):
     print("[%-6.2f]" %y)
