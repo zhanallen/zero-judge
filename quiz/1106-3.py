@@ -60,7 +60,6 @@ Created on Mon Nov  6 10:59:56 2023
 """
 
 x = int(input())
-
 for i in range(1,x+1):
     for j in range(1,i+1):
         print(j%10, end = "")
