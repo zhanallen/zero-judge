@@ -38,16 +38,15 @@ The %【跳5行】
 
 x = input()
 for i in x:
-    if (i == "@" or i == "$" or i == "#" or i == "!" or i == "%"):
-        if (i == "@"):
-            print("@【跳1行】\n1", end = "")
-        elif (i == "$"):
-            print("$【跳2行】\n1\n2", end = "")
-        elif (i == "#"):
-            print("#【跳3行】\n1\n2\n3", end = "")
-        elif (i == "!"):
-            print("!【跳4行】\n1\n2\n3\n4", end = "")
-        elif (i == "%"):
-            print("%【跳5行】\n1\n2\n3\n4\n5", end = "")
+    if (i == "@"):
+        print("@【跳1行】\n1", end = "")
+    elif (i == "$"):
+        print("$【跳2行】\n1\n2", end = "")
+    elif (i == "#"):
+        print("#【跳3行】\n1\n2\n3", end = "")
+    elif (i == "!"):
+        print("!【跳4行】\n1\n2\n3\n4", end = "")
+    elif (i == "%"):
+        print("%【跳5行】\n1\n2\n3\n4\n5", end = "")
     else:
         print(i, end = "")

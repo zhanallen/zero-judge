@@ -31,19 +31,10 @@ Created on Mon Nov 13 09:25:55 2023
 
 a = int(input())
 b = int(input())
-if (a >= 0):
-    for i in range(1, a+1):
-        print(f"{i}" * (i))
-    print()
-else:
-    a = -a
-    for i in range(a, 0, -1):
-        print(f"{i}" * (i))
-    print()
-if (b >= 0):
-    for i in range(1, b+1):
-        print(f"{i}" * (i))
-else:
-    b = -b
-    for i in range(b, 0, -1):
-        print(f"{i}" * (i))
+b = -b
+
+for i in range(1,a+1):
+    print(f"{i}" * i)
+print()
+for i in range(b,0,-1):
+    print(f"{i}" * i)
