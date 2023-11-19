@@ -10,6 +10,8 @@ Created on Tue Oct  3 10:53:35 2023
 while (1):
     try:
         a, b, n = map(int, input().split())
+        if (n == 0):
+            break
         s = f"%.{n+1}f" %(a/b)
         print(s[:-1])
     except:
