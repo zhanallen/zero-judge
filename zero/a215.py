@@ -18,4 +18,4 @@ while (1):
                 break
         print(s)
     except:
-        break   
+        break
